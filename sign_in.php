@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CCU FOCUS SIGN IN PAGE</title>
+    <title>SIGN IN PAGE</title>
     <link rel="shortcut icon" href="pic/cat.ico" type="image/x-icon">
     <link rel="preload" href="test2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- response website -->
@@ -44,15 +44,6 @@
         $student_pwd = $_POST["student_pwd"];
         $student_id = $_POST["student_id"];
         
-       
-      //   if (isset($users[$username]) && $users[$username] === $password){
-      // // Add your code here:
-      //    header("Location: https://www.facebook.com/");
-      //     exit;
-          
-      //   } else {
-      //     $validation_error = "* Incorrect username or password.";
-      //   }
         if($student_pwd==''||$student_id==''){
           echo "<div class=\"error\">(請填寫所有欄位)</div>";
           exit;

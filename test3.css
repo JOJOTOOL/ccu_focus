@@ -75,7 +75,7 @@ input[type=submit]:hover{
 }
 
 .timer2{
-  position:absolute; top:680px; right:190px;
+  position:absolute; top:680px; right:210px;
   color:rgb(189, 37, 37);
   font-family:fantasy;
   font-size:40px;

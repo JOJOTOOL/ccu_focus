@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CCU MAIN PAGE</title>
+    <title>MAIN PAGE</title>
     <link rel="shortcut icon" href="pic/rcat.ico" type="image/x-icon">
     <link rel="preload" href="test3.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <script src="timer.js"></script>
@@ -66,8 +66,8 @@
     <a href="https://ee.ccu.edu.tw/" target="_blank"><img src="pic/ccuee.png" alt="ccuee" width="745" style="position:absolute; bottom:50px; left:40px;"></a>
     <br/>
     
-    <div>&emsp;&emsp;&emsp;<a href="start.php" title="profile" class="sign2">PROFILE</a></div><br/><br/>
-    <div>&emsp;&emsp;&emsp;<a href="start.php" title="change password" class="sign2">CHANGE PASSWORD</a></div><br/><br/>
+    <div>&emsp;&emsp;&emsp;<a href="profile.php" title="profile" class="sign2">PROFILE</a></div><br/><br/>
+    <div>&emsp;&emsp;&emsp;<a href="change_password.php" title="change password" class="sign2">CHANGE PASSWORD</a></div><br/><br/>
     <div>&emsp;&emsp;&emsp;<a href="logout.php" title="logout" class="sign2">LOGOUT</a></div>
     <div class="search">
     <table>

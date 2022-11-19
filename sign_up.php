@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CCU FOCUS SIGN UP PAGE</title>
+    <title>SIGN UP PAGE</title>
     <link rel="shortcut icon" href="pic/cat.ico" type="image/x-icon">
     <link rel="preload" href="test2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
@@ -41,18 +41,24 @@
         $student_name = $_POST["student_name"];
         $student_major = $_POST["student_major"];
         $CCU_email = $_POST["CCU_email"];
-      //   if (isset($users[$username]) && $users[$username] === $password){
-      // // Add your code here:
-      //    header("Location: https://www.facebook.com/");
-      //     exit;
-          
-      //   } else {
-      //     $validation_error = "* Incorrect username or password.";
-      //   }
+      
         if($student_pwd1==''||$student_pwd2==''||$student_id==''||$student_name==''||$student_major==''||$CCU_email==''){
           echo "<br/><div class=\"error\">(請填寫所有欄位)</div>";
           exit;
         }else{
+          $sqlQuery = sprintf("SELECT `student_id` FROM `student_info`;");
+          if ($result = $connection->query($sqlQuery)) {
+            while ($row = $result->fetch_row()) {
+              if($row[0]==$student_id){
+                echo "<br/><div class=\"error\">(此學號已被註冊過)</div>";
+                exit;
+                
+              }
+            }
+            $result->close();
+          }else {
+            echo "執行失敗：" . $connection->error;
+          }
           if($student_pwd1!=$student_pwd2){
             echo "<br/><div class=\"error\">(學生密碼與確認密碼不同)</div>";
             exit;

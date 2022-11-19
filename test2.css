@@ -115,6 +115,7 @@ input[type=password]{
   border-radius: 10px; 
   display:inline;
   line-clamp: 1000px;
+  color:#f0311b;
 }
 
 .sign1:hover{
