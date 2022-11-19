@@ -5,9 +5,14 @@
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="pic/favicon.ico" type="image/x-icon">
         <link rel="preload" href="test.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <script src="timer.js"></script>
         <!-- response website -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                background-image: url(pic/view.jpg);/*背景圖片*/
+                background-position:center;
+            }
+        </style>
     </head>
 
     <body>
