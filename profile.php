@@ -41,5 +41,6 @@
               echo"<div style=\"text-align:inherit;color:#fcbe24;font-family:fantasy;font-size:50px;color:#ffaf5a;\">就讀系所: ".$row[4]."</div><br/><br/>";
               echo"<div style=\"text-align:inherit;color:#fcbe24;font-family:fantasy;font-size:50px;color:#f0311b;\">當前積分: ".$row[5]."</div>";
     ?>
+    <br/><br/><a href="main.php" title="RETURN" class="sign1">RETURN</a>
 </body>
 </html>
