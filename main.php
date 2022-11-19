@@ -85,6 +85,9 @@
             if ($result = $connection->query($sqlQuery)) {
                 # 取得結果
                 while ($row = $result->fetch_row()) {
+                  if($num>11){
+                    break;
+                  }
                   echo "<tr><td>".$num."</td><td>".$row[0]."</td><td>".$row[1]."</td><td>".$row[5]."</td></tr>";
                   $num++;
                 }
