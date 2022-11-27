@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="title-font">
-        #CCU FOCUS <div class="title-font2">SIGN IN</div> PAGE#
+        #<img src="pic/ccu-removebg-preview.png" style="height:70px;">CCU FOCUS <div class="title-font2">SIGN IN</div> PAGE#
     </div>
     <div class="title-font-ch">#CCU FOCUS <div class="title-font-ch2">登入</div>頁面#</div>
     <br><br>

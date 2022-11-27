@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="title-font">
-        #CCU FOCUS <div class="title-font2">SIGN UP</div> PAGE#
+        #<img src="pic/ccu-removebg-preview.png" style="height:70px;">CCU FOCUS <div class="title-font2">SIGN UP</div> PAGE#
     </div>
     <div class="title-font-ch">#CCU FOCUS <div class="title-font-ch2">註冊</div>頁面#</div>
     <br/><br/>
@@ -65,7 +65,7 @@
           }else{
             echo"<script language=\"javascript\">alert('註冊成功!');location.href=\"start.php\";</script>";
             $student_pwd1 = password_hash($student_pwd1, PASSWORD_DEFAULT);
-            $sqlQuery = sprintf("INSERT INTO `student_info` VALUES ('%s','%s','%s','%s','%s',%d);",$student_id,$student_name,$student_pwd1,$CCU_email,$student_major,100);
+            $sqlQuery = sprintf("INSERT INTO `student_info` VALUES ('%s','%s','%s','%s','%s',%d);",$student_id,$student_name,$student_pwd1,$CCU_email,$student_major,0);
             $connection->query($sqlQuery);
             $connection->close();
           }

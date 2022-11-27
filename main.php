@@ -74,7 +74,7 @@
     
         <thead>
             <th scope="col" width="100px">RANK</th>
-            <th scope="col" >ID</th>
+            <th scope="col" >STUDENT ID</th>
             <th scope="col" >NAME</th>
             <th scope="col" >SCORE</th>
         </thead>

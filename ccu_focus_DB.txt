@@ -1,0 +1,58 @@
+CREATE DATABASE ccu_ee
+COLLATE utf8mb4_unicode_ci;
+SHOW DATABASES;
+USE ccu_focus;
+DROP DATABASE ccu_focus;
+DROP TABLE `ee1`;
+DESCRIBE student_info;
+SHOW TABLES;	
+SELECT * FROM `student_info`;
+DELETE FROM `subject` WHERE subject_short='eng';
+UPDATE `student_info` SET student_password='123' WHERE student_id='409415019';
+CREATE TABLE student_info(
+	student_id  VARCHAR(10) PRIMARY KEY NOT NULL,
+    student_name VARCHAR(20) NOT NULL,
+    student_password VARCHAR(70) NOT NULL,
+    student_CCU_email VARCHAR(50) NOT NULL,
+    student_major VARCHAR(30) DEFAULT NULL,
+    student_value INTEGER DEFAULT 0
+);
+CREATE TABLE `all_data`(
+	student_id  VARCHAR(10) PRIMARY KEY NOT NULL
+);
+INSERT INTO student_info VALUES (
+    '409415020', '張力升', '523817','sam20010926@alum.ccu.edu.tw','電機工程','0'
+);
+INSERT INTO `ee` VALUES (
+    '電路學','ee4'
+);
+SELECT * FROM `ee1`;
+CREATE TABLE `subject`(
+	subject_name VARCHAR(50) NOT NULL,
+    subject_short VARCHAR(50) NOT NULL
+);
+CREATE TABLE `ee`(
+	s_subject_name VARCHAR(50) NOT NULL,
+    s_subject_short VARCHAR(50) PRIMARY KEY NOT NULL
+);
+CREATE TABLE `count`(
+	num INTEGER NOT NULL
+);
+INSERT INTO `count` VALUES (
+    0
+);
+UPDATE `count` SET num=0;
+CREATE TABLE `ee1`(
+	ee1_id INTEGER PRIMARY KEY NOT NULL,
+	uploader_name VARCHAR(50) NOT NULL,
+    uploader_id VARCHAR(50) NOT NULL,
+    upload_titles VARCHAR(100) NOT NULL,
+    upload_path VARCHAR(100) NOT NULL,
+    uploader_note VARCHAR(1000),
+    upload_date DATETIME NOT NULL DEFAULT NOW(),
+    upload_like INTEGER NOT NULL DEFAULT 0,
+    upload_dislike INTEGER NOT NULL DEFAULT 0
+);
+INSERT INTO `subject` VALUES (
+    '英文','eng'
+);

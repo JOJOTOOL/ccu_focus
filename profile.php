@@ -22,7 +22,7 @@
     </head>
     <body>
     <div class="title-font">
-        #CCU FOCUS <div class="title-font2">PROFILE</div> PAGE#
+        #<img src="pic/ccu-removebg-preview.png" style="height:70px;">CCU FOCUS <div class="title-font2">PROFILE</div> PAGE#
     </div>
     <div class="title-font-ch">#CCU FOCUS <div class="title-font-ch2">個人資料</div>頁面#</div>
     <br/><br/>

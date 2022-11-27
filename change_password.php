@@ -22,7 +22,7 @@
     </head>
     <body>
     <div class="title-font">
-        #CCU FOCUS <div class="title-font2">PASSWORD-CHANGE</div> PAGE#
+        #<img src="pic/ccu-removebg-preview.png" style="height:70px;">CCU FOCUS <div class="title-font2">PASSWORD-CHANGE</div> PAGE#
     </div>
     <div class="title-font-ch">#CCU FOCUS <div class="title-font-ch2">更改密碼</div>頁面#</div>
     <br/><br/>
@@ -49,7 +49,7 @@
           exit;
         }else{
           if($student_pwd1!=$student_pwd2){
-            echo "<br/><div class=\"error\">(學生密碼與確認密碼不同)</div>";
+            echo "<br/><div class=\"error\">(更新密碼與確認密碼不同)</div>";
             exit;
           }else{
             echo"<script language=\"javascript\">alert('密碼更改成功!');location.href=\"logout.php\";</script>";
