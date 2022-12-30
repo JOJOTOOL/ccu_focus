@@ -4,7 +4,7 @@
         echo "<script>location.href='start.php'</script>";
     }
     require_once ('SQL_connection.php');
-    $sqlQuery = sprintf("SELECT `subject_name` FROM `subject`;");
+    $sqlQuery = sprintf("SELECT `subject_name` FROM `subject` WHERE `subject_short`='%s';",$_SESSION['subject']);
     $result = $connection->query($sqlQuery);
     $row = $result->fetch_row();
     $subject_name=$row[0];
@@ -98,9 +98,9 @@
     require_once ('SQL_connection.php');
         //限制圖片型別格式，大小
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        echo $_FILES['file']["name"];
+       
         if($_FILES['file']["name"]===''||$_POST['titles']===''){
-            echo $_FILES['file']["name"];
+            
             echo "<br/><div class=\"error\">(請選擇上傳檔案或填寫檔案標題)</div><br/>";
             exit;
         }else{

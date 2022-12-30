@@ -4,7 +4,7 @@
         echo "<script>location.href='start.php'</script>";
     }
     require_once ('SQL_connection.php');
-    $sqlQuery = sprintf("SELECT `subject_name` FROM `subject`;");
+    $sqlQuery = sprintf("SELECT `subject_name` FROM `subject` WHERE `subject_short`='%s';",$_SESSION['subject']);
     $result = $connection->query($sqlQuery);
     $row = $result->fetch_row();
     $subject_name=$row[0];
