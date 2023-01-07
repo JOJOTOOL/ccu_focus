@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+#下行是設定要不要啟用rewrite engine, 這是runtime的設定檔,不需restartserver
+RewriteEngine on
+#下行是將檔名中沒有slash 和 . 的檔名, 轉向到 .php的檔案
+RewriteRule ^([^./]+)/?$ $1.php [L]
+

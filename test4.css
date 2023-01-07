@@ -6,7 +6,7 @@ body {
     background-image: url(pic/bg2.jpg);
 	  background-repeat:no-repeat;
 	  /* background-attachment: fixed; */
-    background-color: rgba(58, 54, 54, 0.9);
+    background-color: rgba(58, 54, 54, 0.8);
     background-blend-mode: multiply;
     background-position:0 0;
     background-size: cover;
